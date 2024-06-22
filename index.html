@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-center">
+                <a href="#" id="menuLink" onclick="scrollToContainer()"></a>
+                <a href="#" id="contactLink" onclick="scrollToContact()"></a>
+            </div>
+            <div class="language-dropdown">
+                <select id="languageSelect" onchange="translatePage()">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+
+                </select>
+            </div>
+        </div>
+    </header>
+    <div class="card">
+        <div class="overlay"></div>
+        <div class="card-content">
+            <h2 id="welcome_title"></h2>
+            <p id="welcome_text"></p>
+        </div>
+    </div>
+    
+    
+    <div class="container" id="container">
+        <div class="service" id="Service1">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2 id="service_1_Title"></h2>
+                    <p id="service_1_Desc">.</p>
+                    <p><strong id="service_1_Price"></strong></p>
+                    <p><strong id="service_1_list"></strong></p>
+                    <ul id="service_1_Products">
+
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="imgs/service_1.jpg" >
+                </div>
+            </div>
+        </div>
+
+        <div class="service" id="Service2">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2 id="service_2_Title"></h2>
+                    <p id="service_2_Desc"></p>
+                    <p><strong id="service_2_Price"></strong></p>
+                    <p><strong id="service_2_list"></strong></p>
+                    <ul id="service_2_Products">
+
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="imgs/service_2.jpg" >
+                </div>
+            </div>
+        </div>
+
+        <div class="service" id="Service3">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2 id="service_3_Title"></h2>
+                    <p id="service_3_Desc"></p>
+                    <p><strong id="service_3_Price"></strong></p>
+                    <p><strong id="service_3_list"></strong></p>
+                    <ul id="service_3_Products">
+
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="imgs/service_3.jpg" >
+                </div>
+            </div>
+        </div>
+
+        <div class="service" id="Service4">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2 id="service_4_Title"></h2>
+                    <p id="service_4_Desc"></p>
+                    <p><strong id="service_4_Price"></strong></p>
+                    <p><strong id="service_4_list"></strong></p>
+                    <ul id="service_4_Products">
+
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="imgs/service_4.jpg" >
+                </div>
+            </div>
+        </div>
+
+        <div class="service" id="Service5">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2 id="service_5_Title"></h2>
+                    <p id="service_5_Desc"></p>
+                    <p><strong id="service_5_Price"></strong></p>
+                    <p><strong id="service_5_list"></strong></p>
+                    <ul id="service_5_Products">
+
+                    </ul>
+                </div>
+                <div class="service-image">
+                    <img src="imgs/service_5.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-card" id="contact-card">
+        <img src="imgs/me.jpg" alt="Contact Photo">
+        <div class="contact-details">
+            <p id="phone"><strong>Phone:</strong></p>
+            <p>+123 456 7890</p>
+            <p><strong>Email:</strong></p>
+            <p>contact@example.com</p>
+        </div>
+        <div class="contact-text">
+            <p id="contact_text_d"></p>
+        </div>
+    </div>
+    
+
+    
+    <footer>
+        
+        <p id="footerText"></p>
+    </footer>
+    
+    <!-- Importe o arquivo JavaScript para tradução -->
+    <script src="js/translate.js"></script>
+    <script>
+        function scrollToContainer() {
+            const container = document.getElementById('container');
+            if (container) {
+                container.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('Container element not found.');
+            }
+        }
+
+        function scrollToContact() {
+            const container = document.getElementById('contact-card');
+            if (container) {
+                container.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('Container element not found.');
+            }
+        }
+    </script>
+</body>
+</html>
